@@ -1,0 +1,624 @@
+body {
+    background-image: url('bgm.pnj.jpeg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+.navbar {
+    background-image: url("IMGBAR.png");
+    /* Replace with your relative path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110px;
+    overflow: visible;
+    position: relative;
+}
+
+.navbar button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove margins */
+    text-align: center;
+    overflow: hidden; /* Hide overflow */
+    background-color: #000; /* Set a background color matching the video */
+}
+
+#mainimg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire section */
+    background-color: #000; /* Set a background color matching the video */
+}
+
+@media (max-width: 600px) {
+    #mainvideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*#mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 100px 40px; /* Top and bottom margin of 100px, 40px left and right margins */
+
+
+/*#mainimg img {
+    width: 1152px; /* Adjust the width as needed 
+    height: auto; /* Adjust the height as needed 
+    max-width: 100%;
+    transition: opacity 0.5s ease-in-out; /* Add transition for opacity 
+    opacity: 1;
+}*/
+
+@media screen and (max-width: 768px) {
+    #mainimg {
+        margin: 50px auto; /* Adjust margin for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #mainimg {
+        margin: 30px auto; /* Further adjust margin for very small screens */
+       /* Replace with the path to your smaller image */
+    }
+}
+
+
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    #mainimg {
+        margin: 50px auto;
+        max-width: 80%;
+    }
+    
+    #about {
+        font-size: 28px;
+    }
+
+    #about img {
+        margin: 30px auto;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #mainimg {
+        margin: 40px auto;
+        max-width: 90%;
+    }
+    
+    #about {
+        font-size: 26px;
+    }
+
+    #about img {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #mainimg {
+        margin: 30px auto;
+        max-width: 100%;
+    }
+
+    #about {
+        font-size: 24px;
+    }
+
+    #about img {
+        margin: 10px auto;
+        max-width: 100%;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    #mainimg {
+        margin: 20px auto;
+        max-width: 100%;
+        content: url('Untitled design (3)ph.png'); /* Replace with the path to your smaller image */
+    }
+
+    #about {
+        font-size: 20px;
+    }
+
+    #about img {
+        margin: 10px auto;
+        max-width: 100%;
+        content: url('aboutph.png'); /* Replace with the path to your smaller image */
+    }
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+.horizontal-list {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    /* Use flexbox to align items horizontally */
+}
+
+.horizontal-list li {
+    margin: 0 15px;
+    /* Add some space between the items */
+}
+
+#cv1 h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    #cv1 h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+#cv1 .horizontal-list li img {
+    transition: all 0.3s ease-in-out;
+}
+
+#cv1 .horizontal-list li img:hover {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+/*
+.CV {
+    max-width: 2000px;
+    margin: auto;
+    background: none;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+
+
+.section {
+    margin-bottom: 20px;
+}
+
+.Aligh{
+    max-width: 1000px;
+
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.section p {
+    margin: 10px 0;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 5px;
+} 
+
+/* Basic Styles */
+#skills1 h1 {
+    text-align: center;
+    text-decoration: double;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 480px) {
+    #skills1 h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+#skills1 ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#skills1 div ol li {
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills1 div ol li img {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills1 div ol li:hover {
+    transform: translateY(-5px);
+   
+}
+
+
+/* Different Hover Effects for Each Class */
+#skills1 div ol li img#Graphic-Design:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x rgba(89, 109, 181, 0.5);
+    animation: glow-blue 1s infinite alternate;
+}
+
+#skills1 div ol li img#snapshots:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(89, 181, 126, 0.5);
+    animation: glow-green 1s infinite alternate;
+}
+
+#skills1 div ol li img#highlights:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(232, 232, 20, 0.5);
+    animation: glow-yellow 1s infinite alternate;
+}
+
+#skills1 div ol li img#animations:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px 10x  rgba(149, 89, 181, 0.5);
+    animation: glow-purple 1s infinite alternate;
+}
+
+
+/* Keyframes for Different Colors */
+@keyframes glow-blue {
+    0% {
+        box-shadow: 0px  5px  rgba(89, 109, 181, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(89, 109, 181, 1);
+    }
+}
+
+@keyframes glow-green {
+    0% {
+        box-shadow: 0 0 5px rgba(39, 86, 58, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgb(45, 220, 115);
+    }
+}
+
+@keyframes glow-yellow {
+    0% {
+        box-shadow: 0 0 5px rgba(232, 232, 20, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(232, 232, 20, 1);
+    }
+}
+
+@keyframes glow-purple {
+    0% {
+        box-shadow: 0 0 5px rgba(149, 89, 181, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(149, 89, 181, 1);
+    }
+}
+
+
+#software h2{
+    font-size: 60px;
+}
+@media screen and (max-width: 480px){
+    #software h2{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+#software {
+    padding: 20px;
+    background: none;
+}
+
+#software h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.software-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.software-item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row */
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.software-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.software-item h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.software-item strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.software-item#Lightroom strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9 em;
+}
+/* Specific glow colors for each item */
+#Alight{
+    box-shadow: 0 0 15px 5px rgba(255, 204, 0, 0.6); /* Red glow */
+}
+#Alight:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+
+#Capcut{
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.6); /* Green glow */
+}
+#Capcut:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+#Lightroom {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 255, 0.6); /* Blue glow */
+}
+#Lightroom:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+#AdobeP{
+    box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.6); /* Yellow glow */
+}
+#AdobeP:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+#AdobeE{
+    box-shadow: 0 0 15px 5px rgba(228, 247, 231, 0.6); /* Magenta glow */
+}
+#AdobeE:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+#AdobeXD {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 255, 0.6); /* Cyan glow */
+}
+#AdobeXD:hover{
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+}
+
+@media (min-width: 768px) {
+    .software-item {
+        flex: 1 1 calc(25% - 20px); /* 4 items per row */
+        margin: 10px;
+    }
+}
+
+/* Footer styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.footer img.logo2 {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    vertical-align: middle; /* Aligns the logo vertically with adjacent text */
+}
+
+.link-logos {
+    display: inline-block;
+    margin-left: 10px; /* Adjust spacing between logo and icons */
+    vertical-align: middle; /* Aligns icons vertically with adjacent text */
+}
+
+.link-logos i {
+    font-size: 24px;
+    margin: 0 30px; /* Adjust spacing between icons */
+    color: #fff; /* Set icon color */
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* Adjust spacing between icons and links */
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between links */
+}
+
+.links li a.linkstyle {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links li a.linkstyle:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer img.logo2 {
+        width: 70px;
+    }
+
+    .link-logos i {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+
+    .links li a.linkstyle {
+        font-size: 14px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 15px 10px;
+    }
+
+    .footer img.logo2 {
+        width: 60px;
+    }
+
+    .link-logos {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .link-logos i {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+
+    .links li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .links li a.linkstyle {
+        font-size: 12px;
+    }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 10px 5px;
+    }
+
+    .footer img.logo2 {
+        width: 50px;
+    }
+
+    .link-logos i {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    .links li a.linkstyle {
+        font-size: 10px;
+    }
+}
+
