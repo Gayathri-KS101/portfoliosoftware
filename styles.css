@@ -374,7 +374,7 @@ body {
 }
 
 #services{
-    background-image: url("servbg1.png");
+    /*background-image: url("");*/
     box-shadow: #000;
     -webkit-font-smoothing: antialiased;
 }
