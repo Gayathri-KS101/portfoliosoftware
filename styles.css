@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     color: aliceblue;
-}
+} 
 
 .navbar {
     background-image: url("navbar(1).png");
@@ -241,6 +241,9 @@ body {
 #cv1 h1 {
     font-size: 60px;
     text-align: center;
+    background-color:  rgba(0, 0, 0, 0.7);
+    animation: glow;
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -369,6 +372,83 @@ body {
     box-shadow: 10px 10px 10px 10x  rgba(149, 89, 181, 0.5);
     animation: glow-purple 1s infinite alternate;
 }
+
+#services{
+    background-image: url("servbg1.png");
+    box-shadow: #000;
+    -webkit-font-smoothing: antialiased;
+}
+
+#services h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#services .s-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#services .s-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#services .s-list .s-item h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#services .s-list .s-item ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#services .s-list .s-item li.service-item {
+    font-size: 20px;
+    width: 250px; /* Fixed width for each box */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: none;
+    border-radius: 10px;
+    flex-direction: column; /* Ensure vertical stacking */
+}
+
+#services .s-list .s-item .service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#services .s-list .s-item .service-content video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#services .s-list .s-item .service-content img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
 
 
 /* Keyframes for Different Colors */
